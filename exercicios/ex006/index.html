@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#teste{
+            background-color: rgba(128, 3, 3, 0.719);
+            color: whitesmoke;
+            font: normal 25pt arial;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            margin: auto;
+            margin-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="teste">
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('teste')
+        a.addEventListener('click',teste)
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout',saiu)
+        
+
+
+        function teste() {
+            a.innerText='clicou!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+            
+        }
+        function entrar() {
+            a.innerText='Entrou...'
+            a.style.background = 'black'
+            a.style.color = 'white'
+        }
+        function saiu() {
+            a.innerText='saiu...'
+            a.style.background = 'red'
+            a.style.color = 'white'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        div{
+            font: normal 18pt arial;
+            text-align: center;
+            padding: 10px; 
+        }
+        div > input{
+            border: solid 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="but">
+        <input type="number" name="numb1" id="numb1"> +
+        <input type="number" name="numb2" id="numb2">
+        <input type="button" value="SOMAR" onclick="somar()">
+    </div>
+    <div id="res">Faça o teste</div>
+    <script>
+        function somar() {
+        var num1 = document.getElementById('numb1')
+        var num2 = document.getElementById('numb2')
+        var soma = document.getElementById ('res')
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
+        var resu = n1 + n2
+        res.innerText = (` a soma de ${n1} + ${n2} = ${resu}`)
+        }
+    </script>
+</body>
+</html>

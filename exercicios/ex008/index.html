@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 01</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+            text-align: center;
+        }
+    </style> 
+</head>
+<body>
+    <p>Nome do meu Patrão</p>
+    <input type="email" name="nom" id="nom">
+    <input type="button" value="Botão" onclick="clic()">
+    <div id="txt"><p>acerte o nome e descubra algo incrivel</p></div>
+    <p>a primeira letra em maisculo</p>
+    <script>
+        function clic() {
+            var nome = document.getElementById('nom')
+            var resu = document.getElementById('txt')
+            var res = String(nome.value)
+            if (res == "Vitor") {resu.innerHTML += `Meu patrao é nota 10!!!!`} else {resu.innerHTML += `Errou o nome burro!!! `}  
+        }
+    </script>
+</body>
+</html>

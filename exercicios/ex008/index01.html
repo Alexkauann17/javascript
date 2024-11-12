@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Pais</title>
+</head>
+<body>
+    <h1>Qual seu pais?</h1>
+    <p>descubra se você é estrangeiro</p>
+    <input type="email" name="txtp" id="txtp">
+    <input type="button" value="clique" onclick="click()">
+    <div id="pai"><p>Digite o seu Pais</p></div>
+    <script>
+        function click() {
+        var p1 = document.getElementById('txtp')
+        var txtd = document.getElementById('pai')   
+        var pais2 = String(p1.value)
+
+        if (pais2 == "Brasil") {txtd.innerHTML =+ `você é <strong>brasileiro</strong>`} else {txtd.innerHTML =+ `você é <strong>estrangeiro</strong>`}
+        }
+    </script>
+</body>
+</html>
